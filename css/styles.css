@@ -157,11 +157,15 @@ p {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--header-item-color);
+  transition-property: transform;
+  transition-duration: 50ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item:hover,
 .header-item:focus {
   color: var(--link-color-hover);
+  /* transform: rotate(45deg); */
 }
 
 .address {
