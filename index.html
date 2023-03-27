@@ -17,6 +17,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -30,25 +35,25 @@
 
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-item link" href="./index.html">Studio</a>
+              <a class="header-link link" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
-              <a class="header-item link" href="./portfolio.html">Portfolio</a>
+              <a class="header-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="header-item">
-              <a class="header-item link" href="">Contacts</a>
+              <a class="header-link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
         <address class="address">
           <ul class="address-list list">
             <li class="address-item">
-              <a class="address-item link" href="mailto:info@devstudio.com"
+              <a class="address-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li class="address-item">
-              <a class="address-item link" href="tel:+110001111111"
+              <a class="address-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -60,7 +65,14 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-btn" type="button">Order Service</button>
+        <button data-modal-open class="hero-btn" type="button">
+          Order Service
+        </button>
+
+        <div class="backdrop is-hidden" data-modal>
+          <p></p>
+          <button data-modal-close></button>
+        </div>
       </section>
 
       <section class="section">
@@ -446,5 +458,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
