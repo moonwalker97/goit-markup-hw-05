@@ -35,7 +35,7 @@
 
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-link link" href="./index.html">Studio</a>
+              <a class="header-link link nav-underline" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
               <a class="header-link link" href="./portfolio.html">Portfolio</a>
@@ -68,11 +68,6 @@
         <button data-modal-open class="hero-btn" type="button">
           Order Service
         </button>
-
-        <div class="backdrop is-hidden" data-modal>
-          <p></p>
-          <button data-modal-close></button>
-        </div>
       </section>
 
       <section class="section">
@@ -458,6 +453,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+      <button type="button" class="modal-close" data-modal-close>
+        <svg class="icon-modal-close">
+          <use href="./images/symbol-defs.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+    </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
