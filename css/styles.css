@@ -1,17 +1,3 @@
-/* Основний колір тексту - #2E2F42 */
-
-/* Другорядний колір тексту - #434455 */
-
-/* Колір тексту кнопок - #4D5AE5 */
-
-/* Колір тексту кнопок при наведенні - #FFFFFF */
-
-/* Колір тексту футера - #E7E9FC */
-
-/* Колір основного фону - #E7E9FC */
-
-/* Колір другорядного фону - #F4F4FD */
-
 :root {
   --body-color: #434455;
   --footer-background-color: #2e2f42;
@@ -155,7 +141,7 @@ p {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--header-item-color);
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 
 .header-link:hover,
@@ -169,7 +155,6 @@ p {
     display: block;
     width: 100%;
     height: 4px;
-    margin: 0 auto;
     left: 0;
     bottom: 0;
     background-color: var(--link-color-hover);
@@ -196,7 +181,7 @@ p {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--address-item-color);
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 
 .address-link:hover,
@@ -279,7 +264,7 @@ p {
   position: absolute;
   width: 408px;
   min-height: 576px;
-  background: #fcfcfc;
+  background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -295,19 +280,25 @@ p {
   align-items: center;
   width: 24px;
   height: 24px;
-  margin-left: 360px;
+  margin-left: auto;
   margin-top: 24px;
   margin-right: 24px;
-  margin-bottom: 528px;
   border-radius: 50%;
-  background: #e7e9fc;
+  background-color: var( --footer-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: var(--transition);
+}
+
+.modal-close:is(:hover, :focus) {
+  background-color: var(--background-button-hover-color);
+  border-radius: 50%;
+  fill: var( --button-text-hover-color);
 }
 
 .icon-modal-close {
   width: 8px;
-  height: 8px;
+  height: 8px; 
 }
 
 /* About */
@@ -324,7 +315,7 @@ p {
 
 .about-item-bg {
   height: 112px;
-  background: #f4f4fd;
+  background-color: var(--footer-logo-studio-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -529,7 +520,7 @@ p {
   border-radius: 4px;
   padding: 16px 32px;
   color: var(--customers-icons-color);
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 
 .customers-link:hover,
@@ -618,7 +609,7 @@ p {
   align-items: center;
   justify-content: center;
   fill: #f4f4fd;
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 
 .footer-soc-link:hover,
